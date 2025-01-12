@@ -1,0 +1,54 @@
+/* Basic Selectors */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Class Selector */
+.intro {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* ID Selector */
+#about {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Attribute Selector */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Pseudo-classes */
+a:hover {
+    color: #007BFF;
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+/* Pseudo-elements */
+h1::after {
+    content: " - Welcome!";
+    color: #007BFF;
+}
+
+/* Specificity Rules */
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+}

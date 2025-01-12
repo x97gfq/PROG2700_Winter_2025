@@ -1,0 +1,42 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: Helvetica, sans-serif;
+
+// Mixins
+@mixin button-styles($color) {
+    background-color: $color;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+// Nesting
+.container {
+    font-family: $font-stack;
+    text-align: center;
+    margin-top: 50px;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    p {
+        color: $secondary-color;
+    }
+
+    .btn {
+        @include button-styles($primary-color);
+
+        &:hover {
+            @include button-styles($secondary-color);
+        }
+    }
+}

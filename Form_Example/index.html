@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Here's a basic HTML form that includes examples of various input types and uses the required attribute:
+This form includes:
+
+Text input for name
+Email input
+Password input
+Radio buttons for gender selection
+Checkbox for newsletter subscription
+Select dropdown for country selection
+Textarea for comments
+Each field uses the required attribute to ensure the user fills them out before submitting the form. 
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML5 Form</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <!-- Text input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>s
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Radio buttons -->
+        <label>Age:</label>
+        <input type="radio" id="age" name="age" value="18plus" required>
+        <label for="18plus">18+</label>
+        <input type="radio" id="under18" name="age" value="under18" required>
+        <label for="under18">Under 18</label><br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+        <!-- Select dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
