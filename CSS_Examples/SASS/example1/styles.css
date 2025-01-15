@@ -1,0 +1,37 @@
+.container {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+.container h1 {
+  color: #3498db;
+}
+.container p {
+  color: #2ecc71;
+}
+.container .btn {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .btn:hover {
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}/*# sourceMappingURL=styles.css.map */

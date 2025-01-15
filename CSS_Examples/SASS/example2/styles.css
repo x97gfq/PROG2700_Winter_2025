@@ -1,0 +1,17 @@
+.box1 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid blue;
+}
+
+.box2 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid green;
+}
+
+.box3 {
+  border: 4px solid purple;
+}/*# sourceMappingURL=styles.css.map */

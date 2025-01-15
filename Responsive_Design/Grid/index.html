@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    In this example:
+    The HTML file (index.html) sets up a basic structure with a header, main content area, sidebar, and footer.
+    The CSS file (styles.css) uses CSS Grid to create a responsive layout:
+    The body element is set to display as a grid with three rows: one for the header, one for the main content, and one for the footer. The main content row (1fr) takes up the remaining space.
+    The main element is also a grid container with two columns: the main content area (3fr) and the sidebar (1fr), with a gap between them.
+    A media query is included to change the layout to a single column on smaller screens (max-width: 768px), making the content stack vertically.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Grid Layout Example</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </section>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>

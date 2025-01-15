@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    SCSS allows you to nest CSS selectors in a way that mirrors the HTML structure, making your stylesheets more readable and maintainable. Here are some key points about nesting in SCSS:
+    Basic Nesting: You can nest CSS selectors inside other selectors.
+    Nesting with Combinators: You can nest selectors that use combinators (e.g., >, +, ~).
+    Parent Selector (&): You can use the parent selector & to reference the parent selector within nested rules.
+    Nesting Properties: You can nest properties that share a common prefix.
+    In this example:
+    Basic Nesting: The ul, li, and a selectors are nested inside the nav selector.
+    Parent Selector (&): The &:hover rule inside the .button class references the parent .button selector.
+    Nesting Properties: The font properties are nested under the .font class.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Nesting Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="button">Click Me</button>
+    <div class="font">
+        <p>This is a paragraph with nested font properties.</p>
+    </div>
+</body>
+</html>

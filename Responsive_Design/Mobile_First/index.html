@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    In this example:
+    The HTML file (index.html) sets up a basic structure with a header, main content area, sidebar, and footer.
+    The CSS file (styles.css) starts with styles for mobile devices:
+    The body element is set to display as a flex container with a column direction and minimum height of 100vh.
+    The main element is also a flex container with a column direction, ensuring that the content and sidebar stack vertically on small screens.
+    The content and sidebar sections have padding and margin for spacing.
+    A media query is included to adjust the layout for larger screens (min-width: 768px):
+    The main element's flex-direction is changed to row, making the content and sidebar sit side by side.
+    The content section takes up more space (flex: 3) than the sidebar (flex: 1).
+    This approach ensures that the design is optimized for mobile devices first and then adapts to larger screens.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-First Design Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mobile-First Design Example</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </section>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>

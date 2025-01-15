@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    In this example:
+    The HTML file (index.html) sets up a basic structure with a header, main content area, and footer.
+    The CSS file (styles.css) uses Flexbox to create a responsive layout:
+    The body element is set to display as a flex container with a column direction and minimum height of 100vh to ensure the footer stays at the bottom.
+    The main element is also a flex container, with the content section taking up more space (flex: 3) than the sidebar (flex: 1).
+    A media query is included to change the layout to a column direction on smaller screens (max-width: 768px).    
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Flexbox Layout Example</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </section>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>

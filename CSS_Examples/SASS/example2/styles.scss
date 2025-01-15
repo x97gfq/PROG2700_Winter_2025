@@ -1,0 +1,26 @@
+// Mixin without arguments
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+// Mixin with arguments
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+}
+
+// Using the mixins
+.box1 {
+    @include important-text;
+    @include bordered(blue, 2px);
+}
+
+.box2 {
+    @include important-text;
+    @include bordered(green, 3px);
+}
+
+.box3 {
+    @include bordered(purple, 4px);
+}

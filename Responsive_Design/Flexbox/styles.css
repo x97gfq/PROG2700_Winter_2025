@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 1em;
+    flex-direction: row;
+}
+
+.content {
+    flex: 3;
+    padding: 1em;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 1em;
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        /*
+        Within this media query, the flex-direction of the main container is set to column, which means the flex items 
+        (the content and sidebar) will be stacked vertically instead of horizontally.
+        This ensures that on smaller screens, the layout adapts to be more user-friendly by stacking the content vertically, 
+        making it easier to read and navigate on devices with limited horizontal space.
+        */
+    }
+}
