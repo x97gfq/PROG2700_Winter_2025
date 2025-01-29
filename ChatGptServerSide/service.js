@@ -7,13 +7,17 @@ app.get('/chatgpt/:message', async (req, res) => {
     var msg = req.params.message;
     //console.log(msg);
 
-    const url = 'https://api.openai.com/v1/chat/completions';
+    //const url = 'https://api.openai.com/v1/chat/completions';
+    //const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+
+    const url = "https://chat.freedomgpt.com/api/v1/chat/completions"
     const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
 
     const requestBody = {
-    model: 'gpt-3.5-turbo', // Replace with the appropriate model
-    messages: [{ role: 'user', content: msg }],
-    max_tokens: 50
+        model: 'deepseek-r1',
+        //model: 'gpt-3.5-turbo', // Replace with the appropriate model
+        messages: [{ role: 'user', content: msg }],
+        max_tokens: 50
     };
 
     try {

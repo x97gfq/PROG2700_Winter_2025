@@ -11,7 +11,7 @@ const askChatGPT = async () => {
   const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
 
   const requestBody = {
-    model: 'gpt-3.5-turbo', // Replace with the appropriate model
+    model: 'gpt-4o', // Replace with the appropriate model
     messages: [{ role: 'user', content: 'Why did the chicken cross the road?' }],
     max_tokens: 50
   };
