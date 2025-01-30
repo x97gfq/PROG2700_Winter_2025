@@ -1,7 +1,7 @@
 /*
 download and install NodeJs
 set script execution policy if necessary: Set-ExecutionPolicy Unrestricted -Scope CurrentUser
-npm install node-fetch
+npm i
 */
 
 import fetch from 'node-fetch';
@@ -31,7 +31,7 @@ const askChatGPT = async () => {
     }
 
     const data = await response.json();
-    console.log("data.choices", data.choices);
+    //console.log("data.choices", data.choices);
     console.log('Answer:', data.choices[0].message.content.trim());
   } catch (error) {
     console.error('Error:', error);
