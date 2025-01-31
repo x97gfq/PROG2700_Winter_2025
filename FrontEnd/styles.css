@@ -1,0 +1,20 @@
+
+.numberDisplay {
+    font-size: 6em;
+    display: inline;
+    float: left;
+    height: 200px;
+    width: 200px;
+    border: solid blue 5px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.resultDisplay {
+    font-size: 3em;
+    height: 100px;
+    width: 400px;
+    border: solid red 5px;
+    background-color: pink;
+    border-radius: 10px;
+}
