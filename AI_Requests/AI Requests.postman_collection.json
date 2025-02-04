@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "868d2a62-ecde-4c0a-a082-6cf79a91a65f",
+		"_postman_id": "f70b7b77-6a89-4975-ba31-edab4d172290",
 		"name": "AI Requests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "4337274"
@@ -62,6 +62,37 @@
 					"path": [
 						"chatbot",
 						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chatbot",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"Explain the difference between HTTP GET and HTTP POST Requests in the voice of Snoop Dogg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/chatbot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"chatbot"
 					]
 				}
 			},
