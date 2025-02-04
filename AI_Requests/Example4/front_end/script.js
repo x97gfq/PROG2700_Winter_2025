@@ -52,6 +52,6 @@ document.getElementById('clearBtn').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
 
     var clientId = Math.floor(Math.random() * 1000000) + 1;
-console.log("clientId", clientId);
     document.getElementById("clientId").value = clientId;
+
 });
