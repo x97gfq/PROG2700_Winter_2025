@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+.pleasewait {
+    display: none;
+    position: absolute;
+}
+
 .container {
     width: 400px;
     padding: 20px;

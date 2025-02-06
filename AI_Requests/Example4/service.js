@@ -19,6 +19,8 @@ app.get('/', async (req, res) => {
     res.send(new Date());
 });
 
+let chatHistory = [];
+
 //NEW
 app.post('/chatbot', async (req, res) => {
     //console.log("req",req.body);
@@ -26,14 +28,29 @@ app.post('/chatbot', async (req, res) => {
     //get the prompt from the querystring
     var msg = req.body.message;
     console.log(msg);
+    var clientId = req.body.clientId;
 
     const url = 'https://api.openai.com/v1/chat/completions';
 
+    let newMsg = { role: 'user', content: msg, clientId: clientId };
+
     const requestBody = {
         model: 'gpt-3.5-turbo', // Replace with the appropriate model
-        messages: [{ role: 'user', content: msg }],
+        messages: [],
         max_tokens: 250
     };
+
+    for (let i = 0; i < chatHistory.length; i++) {
+        var historyItem = chatHistory[i];
+        if (parseInt(clientId) === parseInt(historyItem.clientId)) {
+            requestBody.messages.push(historyItem);
+        }
+    }
+
+    chatHistory.push(newMsg);
+    requestBody.messages.push(newMsg);
+
+    console.log("requestBody.messages", requestBody.messages);
 
     try {
         const response = await axios.post(url, requestBody, 
@@ -46,7 +63,10 @@ app.post('/chatbot', async (req, res) => {
         );
 
         const data = response.data;
-        console.log("data.choices[0].message.content", data.choices[0].message.content);
+        //console.log("data.choices[0].message.content", data.choices[0].message.content);
+
+        let newResponse = { role: "assistant", content: data.choices[0].message.content, clientId: clientId };
+        chatHistory.push(newResponse);
 
         res.json(data.choices[0]);
 
