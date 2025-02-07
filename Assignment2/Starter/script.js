@@ -1,4 +1,3 @@
-let previousKey = "";
-let currentKey = "";
+let previousKeys = [];
+let currentKeys = [];
 let operator = "";
-
