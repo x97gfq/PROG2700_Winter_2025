@@ -7,6 +7,8 @@ const player = JSON.parse(jsonString);
 
 // Access properties
 
-
+console.log(player.name);
+console.log(player.age);
+console.log(player.position);
 
 

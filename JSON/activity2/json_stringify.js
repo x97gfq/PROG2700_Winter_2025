@@ -9,5 +9,6 @@ const player = {
   // Convert JavaScript object into JSON string
   const jsonString = JSON.stringify(player, null, 2);
   
+  console.log(jsonString);
   
   
