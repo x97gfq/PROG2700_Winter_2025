@@ -1,0 +1,14 @@
+{
+  "name": "activity1",
+  "version": "1.0.0",
+  "description": "To practice creating and understanding JSON data, focusing on key-value pairs, keys as strings enclosed in double quotes, and the different types of values.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}

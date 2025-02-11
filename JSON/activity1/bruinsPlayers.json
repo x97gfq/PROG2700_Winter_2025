@@ -1,0 +1,60 @@
+{
+    "team": "Boston Bruins",
+    "founded": 1924,
+    "isActive": true,
+    "captain": {
+      "name": "Patrice Bergeron",
+      "position": "Center",
+      "age": 37,
+      "stats": {
+        "gamesPlayed": 1294,
+        "goals": 427,
+        "assists": 613,
+        "points": 1040
+      }
+    },
+    "players": [
+      {
+        "name": "Brad Marchand",
+        "position": "Left Wing",
+        "age": 36,
+        "stats": {
+          "gamesPlayed": 947,
+          "goals": 372,
+          "assists": 466,
+          "points": 838
+        }
+      },
+      {
+        "name": "David Pastrnak",
+        "position": "Right Wing",
+        "age": 28,
+        "stats": {
+          "gamesPlayed": 570,
+          "goals": 252,
+          "assists": 292,
+          "points": 544
+        }
+      },
+      {
+        "name": "Charlie McAvoy",
+        "position": "Defenseman",
+        "age": 27,
+        "stats": {
+          "gamesPlayed": 350,
+          "goals": 36,
+          "assists": 144,
+          "points": 180
+        }
+      }
+    ],
+    "arena": {
+      "name": "TD Garden",
+      "location": "Boston, MA",
+      "capacity": 17565
+    },
+    "championships": 6,
+    "lastChampionshipYear": 2011,
+    "hallOfFamers": ["Bobby Orr", "Ray Bourque", "Phil Esposito"],
+    "nextGame": null
+  }

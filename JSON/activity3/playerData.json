@@ -1,0 +1,29 @@
+{
+    "players": [
+      {
+        "name": "Patrice Bergeron",
+        "age": 37,
+        "goals": 427,
+        "assists": 613
+      },
+      {
+        "name": "Brad Marchand",
+        "age": 36,
+        "goals": 372,
+        "assists": 466
+      },
+      {
+        "name": "David Pastrnak",
+        "age": 28,
+        "goals": 252,
+        "assists": 292
+      },
+      {
+        "name": "Charlie McAvoy",
+        "age": 27,
+        "goals": 36,
+        "assists": 144
+      }
+    ]
+  }
+  
