@@ -15,7 +15,7 @@ function buildSelectOptions(data) {
     // Get the existing select element by id
     let selectElement = document.getElementById('geography');
 
-    let sortedData = sortedOnName(data);
+    let sortedData = sortOnName(data);
 
     // Iterate over the data and create option elements
     sortedData.forEach(item => {
@@ -27,14 +27,14 @@ function buildSelectOptions(data) {
 }
 
 // Function to take the table object and add it to the UI
-function displayData(table) {
+function displayTableOnPage(table) {
     // Append the generated table to the div with id "response"
     let responseDiv = document.getElementById('response');
     responseDiv.appendChild(table);
 }
 
 // Function to generate HTML table from an array of CrimeData objects and append to a div with id "response"
-function generateDisplayData(crimeDataArray) {
+function generateDisplayTable(crimeDataArray) {
 
     let table = document.createElement('table');
     let thead = document.createElement('thead');
@@ -89,12 +89,12 @@ function getSelectedValue() {
 }
 
 // Function to sort an array of objects in descending order based on year
-function sortedDataOnYear(dataArray) {
+function sortOnYear(dataArray) {
     return dataArray.sort((a, b) => b.year - a.year);
 }
 
 // Function to sort an array of objects in descending order based on year
-function sortedOnName(dataArray) {
+function sortOnName(dataArray) {
     return dataArray.sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -139,9 +139,9 @@ function fetchData(url) {
         .then(data => {
             console.log(data);
             let dataObjects = buildDataArray(data);
-            let sortedDataObjects = sortedDataOnYear(dataObjects);
-            var table = generateDisplayData(sortedDataObjects);
-            displayData(table)
+            let sortedDataObjects = sortOnYear(dataObjects);
+            var table = generateDisplayTable(sortedDataObjects);
+            displayTableOnPage(table)
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
@@ -194,8 +194,8 @@ var geography_list = [
     {"name": "Chester", "id": "Chester, Nova Scotia, Royal Canadian Mounted Police, rural [12706]"},
     {"name": "Lower Sackville", "id": "Lower Sackville, Nova Scotia, Royal Canadian Mounted Police, rural [12707]"},
     {"name": "Cole Harbour", "id": "Cole Harbour, Nova Scotia, Royal Canadian Mounted Police, rural [12708]"},
-    {"name": "Digby", "id": "Digby, Nova Scotia, Royal Canadian Mounted Police, rural [12709]"},
-    {"name": "Digby", "id": "Digby, Nova Scotia, Royal Canadian Mounted Police, municipal [12711]"},
+    {"name": "Digby - rural", "id": "Digby, Nova Scotia, Royal Canadian Mounted Police, rural [12709]"},
+    {"name": "Digby - municipal", "id": "Digby, Nova Scotia, Royal Canadian Mounted Police, municipal [12711]"},
     {"name": "Parrsboro", "id": "Parrsboro, Nova Scotia, Royal Canadian Mounted Police, municipal [12712]"},
     {"name": "Tantallon", "id": "Tantallon, Nova Scotia, Royal Canadian Mounted Police, rural [12715]"},
     {"name": "Kings County", "id": "Kings County, Nova Scotia, Royal Canadian Mounted Police, rural [12720]"},
@@ -225,8 +225,8 @@ var geography_list = [
     {"name": "Chéticamp", "id": "Chéticamp, Nova Scotia, Royal Canadian Mounted Police, rural [12805]"},
     {"name": "Ingonish Beach", "id": "Ingonish Beach, Nova Scotia, Royal Canadian Mounted Police, rural [12812]"},
     {"name": "Inverness County", "id": "Inverness County, Nova Scotia, Royal Canadian Mounted Police, rural [12813]"},
-    {"name": "Port Hawkesbury", "id": "Port Hawkesbury, Nova Scotia, Royal Canadian Mounted Police, rural [12820]"},
-    {"name": "Port Hawkesbury", "id": "Port Hawkesbury, Nova Scotia, Royal Canadian Mounted Police, municipal [12821]"},
+    {"name": "Port Hawkesbury - rural", "id": "Port Hawkesbury, Nova Scotia, Royal Canadian Mounted Police, rural [12820]"},
+    {"name": "Port Hawkesbury - municipal", "id": "Port Hawkesbury, Nova Scotia, Royal Canadian Mounted Police, municipal [12821]"},
     {"name": "St. Peters", "id": "St. Peters, Nova Scotia, Royal Canadian Mounted Police, rural [12825]"},
     {"name": "Oxford County", "id": "Oxford County, Nova Scotia, Royal Canadian Mounted Police, municipal [12833]"},
     {"name": "Yarmouth", "id": "Yarmouth, Nova Scotia, Royal Canadian Mounted Police, municipal [12834]"},
