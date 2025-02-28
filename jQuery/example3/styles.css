@@ -1,0 +1,26 @@
+
+.eightBallOuter {
+    width: 600px;
+    height: 550px;
+    margin: auto;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.eightBallInner {
+    background-Color: white;
+    border-radius: 50%;
+    width: 300px;
+    height: 275px;
+    margin: 0;
+    position: absolute;
+    top: 18%;
+    left: 44%;
+}
+
+.message {
+    margin: 0;
+    position: absolute;
+    top: 18%;
+    left: 44%;
+}

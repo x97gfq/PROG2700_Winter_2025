@@ -1,0 +1,27 @@
+Demo:
+
+
+Crime Statistics - Incidents and rates for selected offences
+https://data.novascotia.ca/Crime-and-Justice/Crime-Statistics-Incidents-and-rates-for-selected-/m862-kmjy
+
+Developer Docs:
+https://dev.socrata.com/foundry/data.novascotia.ca/m862-kmjy
+
+SoQL Example: 
+escaped URL: https://data.novascotia.ca/resource/m862-kmjy.json?$where=geography%20like%20%27%25Barrington%25%27%20and%20year%20=%20%272010%27
+
+unescaped URL: https://data.novascotia.ca/resource/m862-kmjy.json?$where=geography like '%Barrington%' and year='2021'
+
+https://data.novascotia.ca/resource/m862-kmjy.json?$where=geography%20like%20%27%25Barrington%25%27%20and%20year%20=%20%272010%27
+
+
+
+
+
+
+
+https://data.novascotia.ca/resource/2shh-dv8p.json?$?$where=facility_towny%20like%20%27%25SACKVILLE%25%27%
+
+https://data.novascotia.ca/resource/2shh-dv8p.json?$?$where=facility_towny%20like%20%27%25SACKVILLE%25%27%%20and%20facility%20like%20%27%25TIM%25%27
+
+https://data.novascotia.ca/resource/2shh-dv8p.json?$where=facility_town%20like%20%27%25SACKVILLE%25%27%20and%20facility%20like%20%27%25TIM%25%27
