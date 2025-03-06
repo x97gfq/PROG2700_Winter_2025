@@ -1,9 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+    initializeGame();
+});
 
 function initializeGame() {
-    console.log("started!");
-    //
-    //
-    //
+    // Your game initialization code here
+    console.log('Game initialized!');
 }
-
-window.onload = initializeGame;
